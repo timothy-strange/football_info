@@ -78,6 +78,7 @@ class App:
 
     def run(self) -> None:
         curses.curs_set(0)
+        curses.set_escdelay(25)
         self.screen.keypad(True)
         self.init_colors()
         while True:
